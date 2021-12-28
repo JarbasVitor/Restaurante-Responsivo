@@ -15,7 +15,6 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #EFFDF6;
-    height: 1920px;
 }
 
 .Titulo{
@@ -156,6 +155,29 @@ body{
     margin: 10px;
 }
 
+.Titulo-Historia{
+    text-align: center;
+    color: #d3263b;
+    text-shadow: 1px 1px #000000;
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+.Container{
+    display: flex;
+    margin: 20px;
+}
+
+.Imagem-Restaurante{
+    width: 50vh;
+    box-shadow: black 1px 0px 5px;
+}
+
+.Paragrafo-Restaurante{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
 
 /* Responsive */
 @media screen and (min-width: 320px) and (max-width: 599.9px){
@@ -178,6 +200,7 @@ body{
         width: 300px;
         backdrop-filter: brightness(30%);
     }
+    
 }
 
 @media screen and (min-width:600px) and (max-width:1023.9px){
@@ -188,20 +211,31 @@ body{
 }
 
 @media screen and (min-width:1900px){
+
     .Apresentacao{
         background-size: cover;
     }
 }
 
 @media screen and (min-width:320px) and (max-width:1200px){
-    /* Apenas Para Ajustar as Imagens */
+    /* Apenas Para Ajustar as Imagens E Textos */
     .Linha-Pratos{
         flex-direction: column;
         align-items: center;
     }
+
    .Linha-Pratos li{
         margin: 20px;
-   }
+    }
+
+   .Container{
+    display: block;
+    }
+
+    .Imagem-Restaurante{
+        display: block;
+        margin: 0 auto;   
+    }
 }
 
 @media screen and (max-width: 599.9px){
