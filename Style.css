@@ -1,0 +1,119 @@
+/* 
+    Preferencia em Class
+    Cor sempre em #
+    Sempre Com TAB
+    Padrão de Class = ExemploDeClasse
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(26, 19, 31);
+}
+
+.Titulo{
+    font-size: 2.5rem;
+    margin: .5rem;
+    color: #d63d4f;
+    text-shadow: 1px 1px #5ea184;
+}
+
+.NavBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#EFFDF6;
+    box-shadow: 1px 0px 2px black;
+}
+
+.NavBar-Links ul {
+    display: flex;
+}
+
+.NavBar-Links li {
+    list-style: none;
+}
+
+.NavBar-Links li a {
+    text-decoration: none;
+    padding: 2rem 3rem;
+    display: block;
+    color: #000000;
+}
+
+.NavBar-Links a:hover{
+    color: #d63d4f;
+    transition: 0.5s;
+}
+
+.BotaoAlternar{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.BotaoAlternar .Barra{
+    height: 3px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+.BotaoAlternar:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 600px){
+    .BotaoAlternar{
+        display: flex;
+    }
+
+    .NavBar-Links{
+        display: none;
+        width: 100%;
+    }
+
+    .NavBar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .NavBar-Links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .NavBar-Links li{
+        text-align: center;       
+    }
+
+    .NavBar-Links li a {
+        padding: .5rem 1rem;
+    }
+
+    .NavBar-Links a:hover{
+        background-color: #e6e6e6;
+    }
+    .NavBar-Links.active{
+        display:flex;
+    }
+}
+
