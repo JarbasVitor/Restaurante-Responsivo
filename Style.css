@@ -75,8 +75,6 @@ body{
     cursor: pointer;
 }
 
-
-
 .Apresentacao{
     background: url(src/ImagemPrincipal.jpg) no-repeat;
     width: 100%;
@@ -212,6 +210,16 @@ footer a{
         width: 300px;
         backdrop-filter: brightness(30%);
     }
+
+    .Imagem-Restaurante{
+        width: 45vh;
+        box-shadow: black 1px 0px 5px;
+    }
+
+    .Imagem-Pratos{
+        width: 50vh;
+        box-shadow: black 1px 0px 5px;
+    }
     
 }
 
@@ -219,6 +227,16 @@ footer a{
    
     .NavBar-Links li a {
         padding: 2rem 1rem;
+    }
+    
+    .Imagem-Restaurante{
+        width: 45vh;
+        box-shadow: black 1px 0px 5px;
+    }
+
+    .Imagem-Pratos{
+        width: 50vh;
+        box-shadow: black 1px 0px 5px;
     }
 }
 
