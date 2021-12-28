@@ -80,8 +80,39 @@ body{
 
 
 /* Responsive */
+@media screen and (min-width: 320px) and (max-width: 599.9px){
 
-@media screen and (max-width: 600px){
+    .Titulo{
+        width: 250px;
+    }
+
+    .BotaoAlternar{      
+        top: 3rem;
+    }
+
+    .BotaoAlternar .Barra{
+        height: 4px;
+    }
+   
+}
+
+@media screen and (min-width:600px) and (max-width:1023.9px){
+    .NavBar-Links li a {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199.9px){
+    
+   
+}
+
+@media screen and (min-width:1200px){
+
+}
+
+
+@media screen and (max-width: 599.9px){
     .BotaoAlternar{
         display: flex;
     }
@@ -94,11 +125,13 @@ body{
     .NavBar{
         flex-direction: column;
         align-items: flex-start;
+        
     }
 
     .NavBar-Links ul{
         width: 100%;
         flex-direction: column;
+        
     }
 
     .NavBar-Links li{
