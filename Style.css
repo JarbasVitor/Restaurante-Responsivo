@@ -14,7 +14,8 @@
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(26, 19, 31);
+    background-color: #EFFDF6;
+    height: 1920px;
 }
 
 .Titulo{
@@ -86,7 +87,7 @@ body{
 
 .TextoApresentacao{
     color:#d3263b;
-    text-shadow: 1px 1px #000000;;
+    text-shadow: 1px 1px #000000;
     margin: 100px 80px;
     padding: 10px;
     text-align: center;
@@ -117,6 +118,45 @@ body{
     color: #d86875;
 }
 
+.Titulo-Pratos{
+    text-align: center;
+    color: #d3263b;
+    text-shadow: 1px 1px #000000;
+    margin: 20px;
+    font-size: 2.5rem;
+}
+
+.Linha-Pratos{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.Linha-Pratos li {
+    text-align: center;
+    backdrop-filter: brightness(95%);
+}
+
+.Imagem-Pratos{
+    width: 55vh;
+    box-shadow: black 1px 0px 5px;
+}
+
+.Imagem-Pratos:hover{
+    -webkit-transform: scale(1.01);
+    transform:scale(1.01);
+}
+
+.SubTitulo-Pratos{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.Descricao-Pratos{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+
 /* Responsive */
 @media screen and (min-width: 320px) and (max-width: 599.9px){
 
@@ -141,14 +181,10 @@ body{
 }
 
 @media screen and (min-width:600px) and (max-width:1023.9px){
+   
     .NavBar-Links li a {
         padding: 2rem 1rem;
     }
-}
-
-@media screen and (min-width:1024px) and (max-width:1199.9px){
-    
-   
 }
 
 @media screen and (min-width:1900px){
@@ -157,7 +193,19 @@ body{
     }
 }
 
+@media screen and (min-width:320px) and (max-width:1200px){
+    /* Apenas Para Ajustar as Imagens */
+    .Linha-Pratos{
+        flex-direction: column;
+        align-items: center;
+    }
+   .Linha-Pratos li{
+        margin: 20px;
+   }
+}
+
 @media screen and (max-width: 599.9px){
+    /* Apenas Para Ajustar o Menu Hamburguer */
     .BotaoAlternar{
         display: flex;
     }
